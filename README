@@ -1,2 +1,17 @@
-# Basic-Portfolio
-Create basic portfolio webpage using only html. Include picture, brief bio (2 sentences), links to social media profiles (including github profile). Deploy the page to github pages (No need to include projects yet, this will be added in future assignments).
+# Homework - Putting it all together
+
+Continuing building on portfolio, one possible layout:
+
+Five main sections:
+
+Header - title and logo
+Left sidebar - site nav, should float left and have a width of 25%
+Main body - the meat of your page, should include a few paragraphs
+Right sidebar - external links, should float right have a width of 25%
+Footer - more site nav
+Add a simple contact form and use http://formspree.io/ as your form action
+
+Play around with different color and font schemes
+
+
+(Homework instructions: https://github.com/hackbrightacademy/pt-frontend-fall-2015/tree/master/week2)
