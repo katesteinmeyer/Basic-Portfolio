@@ -1,43 +1,83 @@
 <!DOCTYPE HTML>
-<html lang="en">
+<html>
+<link rel="stylesheet" href= "../a-portfolio/css/scroll.css">
+<link rel="stylesheet" href= "../a-portfolio/css/pop-up.css">
 
-    <head profile="K">
-<link rel="icon" 
-      type="image/png" href="img/katefavicon.png" >
-        <link rel="stylesheet" href= "css/style.css">
-        <meta charset="utf-8">
-        <meta name="Kate Steinmeyer" content="Portfolio">
-        <meta name="portfolio, design, code" content="coding, designing">
-        <meta name="author" content="Kate Steinmeyer">
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@kateelspeth" />
-        <meta name="twitter:creator" content="@kateelspeth" />
-        <meta property="og:url" content="" />
-        <meta property="og:Design" content="Design Portfolio" />
-        <meta property="og:description" content="Portfolio" />
- 
-        <title>Kate Steinmeyer</title>
-    </head>
+<body>
+  
+     <div id="main"></div>
+    <a href="#" id="loadMore"></a>
+      
+    <div id="title" class="slide header">  
+      
+      <h1>Think. Design. Code.</h1>
+        
+    
 
-    <body>
+
+      <h2>Have an idea for a project? Let's <a href="#project4" class="chitchatbutton" > chit chat!</a></h2>
        
-         <div class = fun>   
-        </div>
-        <header>
-            <h1><a href="index.html"tabindex="1" id = logo>KATE</a></h1> 
-            
-           
-            <ul class= menu>
-              <li class = one><a href="homework-week-2.html"tabindex="1">Homework</a></li>
-              <li class = two><a href="https://github.com/katesteinmeyer"tabindex="2"target="_blank">Code</a></li>
-              <li class = three><a href="http://www.katesteinmeyer.com/"tabindex="3"target="_blank">Design</a></li>
-            </ul>
-            </div>
-     <div class = cute>
-        </header>
-        <footer>
-            <p>&copy; Kate Steinmeyer | copyright 2015 All rights reserved.</p>
-        </footer>
+     <a id="formz"></a> 
 
-    </body>
+    </div>
+
+     <div id= "godown"></div>
+
+    <div id="project1" class="slide">
+      <div class="title">
+        <h1 class= "search">Weather Web App </h1>
+        <p>Description goes here.</p>
+      </div>
+    </div>
+
+    <div id="project2" class="slide">
+      <div class="title">
+        <h1>Calculator Web App</h1>
+        <p>Description goes here.</p>
+      </div>
+    </div>
+
+    <div id="project3" class="slide">
+      <div class="title">
+        <h1>Project3</h1>
+        <p>Description goes here.</p>
+      </div>
+    </div>
+
+    <div id="project4" class="slide header" >
+        <a name="formz" />
+        <section id="main">
+    <article class="article" id="nav1">
+        <form id="myForm" onsubmit="return showPopup()" class = "formz" action="https://formspree.io/katesteinmeyer@gmail.com" method="POST">
+        <h3>Let's Chit Chat!</h3>
+        <input onkeypress="colorbutton()" id="fullname" class = "name" type="text" name="name" placeholder="*Full Name" required>
+        <input onkeypress="colorbutton()" id="email" class = "name" type="email" name="_replyto" placeholder="*E-mail" required>
+        <textarea id="message" name="message" placeholder="Message"></textarea>
+        <div class= "sendbutton">
+            <input id = "button" type="submit" value="Send">
+        </div>
+        </form>
+        </article>
+                <div class= "thankyou" id = "thanks">
+    
+    <h1 class = "bolder">Thank you for getting in touch!</h1>
+    <p class = "paras">In the mean time, check out cool stuff I'm up to:</p>
+<div class = "socialmedia">
+<ul>
+<li><span><a href="https://twitter.com/kateelspeth" class="twitter" target="_blank"></a></span></li>
+<li><a href="https://dribbble.com/katesteinmeyer" class="dribbble" target="_blank"></a></li>
+<li><a href="https://www.linkedin.com/in/katesteinmeyer" class="linkedin" target="_blank"></a></li>
+</ul>  
+</div>
+<div class= "fancybttn">  
+<a href="#" class="myButton" onclick ="closePopup()">Go back</a>
+    </div>  
+</div>
+</section>
+    </div>
+    
+     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	
+    <script src="../a-portfolio/js/thankyou.js"></script>
+</body>
 </html>
