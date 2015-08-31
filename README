@@ -1,17 +1,3 @@
-# Homework - Putting it all together
+# Homework - Week 3
 
-Continuing building on portfolio, one possible layout:
-
-Five main sections:
-
-Header - title and logo
-Left sidebar - site nav, should float left and have a width of 25%
-Main body - the meat of your page, should include a few paragraphs
-Right sidebar - external links, should float right have a width of 25%
-Footer - more site nav
-Add a simple contact form and use http://formspree.io/ as your form action
-
-Play around with different color and font schemes
-
-
-(Homework instructions: https://github.com/hackbrightacademy/pt-frontend-fall-2015/tree/master/week2)
+Choose a minimum of 2 in-class projects. Refine/customize these projects. (ie: Add html + css) Add these assignments to your portfolio as images. (use screenshots) Add a simple thank you message to your page after someone has submitted a contact form. Allow the thank you form to close. (Hint: You can do this by creating a hidden div on your page. When a visitor clicks the submit button on your form, change the div to be visible. The div should have a button or link which allows the visitor to get rid of the message. ie A 'Close' button. When the visitor clicks the 'Close' button, the thank you div goes back to being hidden.)
