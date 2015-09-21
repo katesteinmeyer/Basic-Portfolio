@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" href="css/style.css">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</head>
+
+<body>
+	
+	<div class ="canvas">
+		<div id='uploadit'>
+			 
+			<label class="customUpload btnUpload btnM"> 
+			<div class = "settings"><input type='file' id='getval' class="upload"  /></div>
+			</label>
+ 
+		</div>		
+		
+		<div class= "notebox"> 
+			<div class= "notearea">
+				<h1>Notes</h1>
+				<h2 id="date"></h2>
+				
+				<form id="myForm">
+				<textarea input type="text" placeholder="Start writing..." cols="200" name='comment' id='notes' autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+			    
+				<div class="delete"><input type="button" class= "deletez" onclick="myFunction()" value="Reset form"></div>
+					<div class="email"><button class= "notez" input type="button" value="notesemail"></button></div>
+				</form>
+				</div>
+		</div>
+		
+		
+		<div class= "boxArea">
+			<div class="textArea"><input type="text" readonly size="20" id="display"</div>
+				<div class="buttons">
+					<div class="numbers"><input type="button" class="smallnumber" value="c" id="clear" onclick='c("c")' id="clear"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="m-" onclick='c("m-")'></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="m+" onclick='c("plus")'></div>
+					<div class="numberac"><input type="button" class="numbactions"value="&divide;" id="operator" onclick='c("&divide;")' id="divide"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="9" onclick='v("9")' id="nine"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="8" onclick='v("8")' id="eight"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="7" onclick='v("7")' id="seven"></div>
+					<div class="numberac"><input type="button" class="numbactions"value="x" id="operator" onclick='v("x")' id="multiply"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="6" onclick='v("6")'id="six"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="5" onclick='v("5")' id="five"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="4" onclick='v("4")' id="four"></div>
+					<div class="numberac"><input type="button" class="numbactions"value="-" id="operator" onclick='v("-")'id="minus"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="1" onclick='v("1")' id="one"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="2" onclick='v("2")' id="two"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="3" onclick='v("3")'id="three"></div>
+					<div class="numberac"><input type="button" class="numbactions"value="+" id="operator" onclick='v("+")' id="plus"></div>
+					<div class="numbers"><input type="button" class="smallzero"value="0" onclick='v("0")'id="zero"></div>
+					<div class="numbers"><input type="button" class="smallnumber"value="." onclick='v(".")'></div>
+					<div class="numberac"><input type="button" class="numbactions"value="=" id="equals" accesskey="=" onclick='e("=")'></div>
+				</div>
+		</div>
+	</div>		
+	
+<script src="../calc/calculator.js"></script>
+</body>
+	
+</html>
+	

@@ -1,0 +1,288 @@
+
+h2 {
+	text-align:center;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+html {
+	background-color:black;
+	background: url(../img/7107118693_72a2fc89b3_k.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	position:fixed;
+    overflow:hidden;	
+}
+
+h1 {
+	text-align:center;
+}
+
+.canvas {
+	background-color:black;
+	margin-top:50px;
+}
+
+.boxArea {
+	position: absolute;
+	line-height: 1.4em;
+	background-color: black;
+	float: left;
+	display: block;
+	width: 490px;
+	height: 750px;
+	border: 3px solid black;
+	border-radius: 5px;
+	margin: 10px 10px 200px 10px;
+	margin-left: 700px;
+	padding: 10px 10px 10px 25px;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	opacity: 0.80;
+}
+
+#display { 
+	width: 460px;
+	height: 100px;
+	background-color: black;
+	font-size: 60px;
+	font-family: helvetica;
+	border: none;
+	marign: 10px 10px 10px 10px;
+	margin-bottom: 20px;
+	padding: 5px 10px 5px 20px;
+	text-align: right;
+	font-weight: bold;
+	color: white;
+}
+
+.smallnumber {
+    background:url(../img/) no-repeat;
+    width: 120px;
+    height: 120px;
+    border: none;
+	font-size: 30px;
+	color: black;
+	outline: none;
+	background-color: white;
+	font-weight: bold;
+	border: 1px solid black
+}
+
+
+.numbactions {
+    background:url(../img/) no-repeat;
+    width: 120px;
+    height: 120px;
+    border: none;
+	font-size: 30px;
+	color: black;
+	outline: none;
+	background-color: #CCCCCC;
+	font-weight: bold;
+	border: 1px solid black;
+}
+
+.smallzero {
+    background:url(../img/) no-repeat;
+    width: 240px;
+    height: 120px;
+    border: none;
+	font-size: 30px;
+	color: black;
+	outline: none;
+	background-color: white;
+	font-weight: bold;
+	border: 1px solid black
+}
+
+.numbactions:hover { 
+    background:url(../img/) no-repeat;
+	color: azure;
+    font-weight: bold;
+	font-size: 35px;
+	background-color: #3F3F3F;
+}
+
+.smallnumber:hover { 
+    background:url(../img/) no-repeat;
+	color: azure;
+    font-weight: bold;
+	font-size: 35px;
+	background-color: #3F3F3F;
+}
+
+.smallzero:hover { 
+    background:url(../img/) no-repeat;
+	color: azure;
+    font-weight: bold;
+	font-size: 35px;
+	background-color: #3F3F3F;
+}
+
+.smallnumber:active {	
+}
+
+.numbers {
+	float: left;
+	padding: 0px 0px 0px 0px;
+}
+
+.numberac {
+	float: left;
+	padding: 0px 0px 0px 0px;
+}
+
+.notebox {
+	width: 500px;
+	height: 750px;
+	line-height: 1.4em;
+	background-color:black;
+    border: none;
+	font-size:18px;
+	font-family: helvetica;
+	background-color: black;
+	color: white;
+	float:left;
+	margin: 10px 20px 10px 20px;
+	margin-left: 100px;
+	margin-right: 40px;
+	padding: 10px 10px 10px 10px;
+	outline: none;
+	opacity: 0.80;
+	border-radius: 5px; 
+}
+
+textArea {
+	background-color: black ;
+	line: none;
+	font-family: helvetica;
+	color: white;
+	font-size: 25px;
+	width: 420px;
+	height: 500px;
+	margin: 30px 30px 30px 30px;
+	box-decoration-break: none;
+	text-decoration-line: none;
+	border: none;
+	outline: none;
+	opacity: 0.80;	
+}
+
+::selection {
+  background: white; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: white; /* Gecko Browsers */
+}
+
+#uploadit{
+    background-image:url("")no-repeat center center fixed;
+    background-size:cover;
+    background-position: center;
+    height: 100%; 
+	width: 100%;
+    border: 1px solid #bbb;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+  	background-size: cover;
+    overflow: hidden;
+	position: fixed;
+    top: 0%;
+	line-height: 1 !important;
+	background-color: none;
+	font-size: none;
+    color: transparent; /* Fix for Firefox */
+    border-style: none;
+	line-height: 0;
+	left: 0%;
+	right:0%;
+	
+}
+
+.notez {
+	width: 56px;
+	height: 43px;
+	background:url(../img/) no-repeat;
+    border: none;
+	outline: none;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	padding-top: 40px;
+	padding: 8px 8px 8px 8px;
+}
+
+.deletez {
+	width: 56px;
+	height: 43px;
+	background:url(../img/delete-01.png) no-repeat;
+    border: none;
+	outline: none;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+	padding-top: 40px;
+	padding: 8px 8px 8px 8px;
+	font-size: 0;
+	line-height: 0;
+}
+
+.notez:hover { 
+	background:url(../img/notezs-01.png) no-repeat;
+}
+
+.notez:active {
+	background:url(../img/notezs-01.png) no-repeat;
+}
+
+
+.btnDefault, .btnUpload {
+	width: 111px;
+    height: 116px;
+	float: left;
+	postion: fixed;
+	margin-top: 50px;
+	margin-left: 30px;
+    background: transparent url(../img/uploadit_01-01.png) no-repeat scroll 0 0;
+    background-color:none;
+    border: none;
+    color:none;
+    cursor: pointer;
+    font-weight: none;
+    display: inline-block;
+    padding: none;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: none;
+}
+.btnDefault:focus, .btnDefault:hover, .btnUpload:focus, .btnUpload:hover {
+    background-color: none;
+}
+.btnM {
+    border-radius: none;
+    font-size: none;
+    padding: none;
+}
+.customUpload {
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.customUpload input.upload {
+    cursor: pointer;
+    margin: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
