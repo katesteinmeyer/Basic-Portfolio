@@ -29,10 +29,9 @@ function colorbutton() {
     var emailField = document.getElementById("email");
     var messageField = document.getElementById("message");
     var colorfulbttn = document.getElementById("button");
-    
+	
     if ( fullnameField.value !== "" && emailField.value !== ""){
         colorfulbttn.className = 'button2';
-    
     }
 }
 
