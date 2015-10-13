@@ -55,7 +55,7 @@ function getWeather(zipCode) {
 					//populate days of the week
 					$("#temps").append("<td class=\"letter forecastTemps\">" + dayTemp + "</td>");
 					$("#weathericons tr").append(
-						"<td class=\"weather-icons icon-" + icon + "\"></td>"
+						"<td class=\"weather-icons\"><img src=\"img/"+icon+".png\" /></td>"
 					);
 					$("#days tr").append(
 						"<td class=\"letter\">" + days[dayNum + i] + "</td>"
@@ -80,3 +80,5 @@ $(document).ready(function(){
   		}
 	});	
 })
+
+
