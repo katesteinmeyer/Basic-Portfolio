@@ -1,9 +1,6 @@
 .button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
     text-decoration: none;
-	background:url(../img/arrow-01.png) no-repeat;
+	background:url(../img/arrow_right.png) no-repeat;
     border: none;
 	outline: none;
 	float: left;
@@ -18,6 +15,33 @@
     height: 50px;
     z-index:0;
 	color: #000;
+}
+
+.codebtn {
+    text-decoration: none;
+	background:url(../img/code_icon_i.png) no-repeat;
+    border: none;
+	outline: none;
+	float: left;
+	padding-top: 2px;
+	padding: 8px 8px 8px 8px;
+	font-size: 0;
+	line-height: 0;
+    margin-top: 10px;
+	margin-right: 800px;
+    width: 20px;
+    height:  20px;
+	color: #000;
+	background-size: contain;
+	clear:both;
+}
+
+p {
+	width: 300px;
+	font-size: 25px;
+	font-family: sans-serif;
+	font-weight: lighter;
+
 }
 
 html {
@@ -126,28 +150,35 @@ img:last-of-type {
 }
 
 #title {
-  background-color: #00B5EC;
+  background-color: #24A1FF;
   background-attachment: fixed;  
 }
 
 #project1:before {
-  background-image: url(../img/project_01.png);
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
+	background-image: url(../img/project_02_weather.png);
+	transform: translateZ(-1px) scale(2);
+	z-index:-1;
+	background-color: #FF7132;
 }
 
 #project2 {
-  background-image: url(../img/project_03-01.png);
-  background-attachment: fixed;
+	background-image: url(../img/project_02_doodle_desktop.png);
+	background-attachment: fixed;
+	
 }
 
 #project3:before {
-  background-image: url(../img/project_02.png);
-  transform: translateZ(-1px) scale(2);
-  z-index:-1;
+	background-image: url(../img/project_02_doodle_desktop.png);
+	transform: translateZ(-1px) scale(2);
+	z-index:-1;
+	background-color: #C87CE5;
 }
 
 #project4 {
+	background-image: url(../img/project_02_doodle_desktop%20_star.png);
+	background-color: #423DA5;
+}
+#project5 {
   background: #ED1544;
 }
 
@@ -255,8 +286,6 @@ input#button.button2 {
     
 }
 
-
-
 .godown {
     background-image:url('../img/go-down-01.png');
     width: 66px;
@@ -327,6 +356,21 @@ header {
     width: 400px;
     height: 300px;
     z-index:0;
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+}
+
+.navbutton{
+
+    position: relative;
+    padding-top: 100px;
+    margin-top: 50px;
+    width: 400px;
+    height: 300px;
+    z-index:0;
+	list-style: none;
+	text-decoration: none;
 }
     
 
@@ -341,7 +385,87 @@ input#circlechat {
     font-color: white;
     background-repeat: none;
     border: none;
-       z-index:0;
+    z-index:0;
 }
     
+@media only screen and (max-width: 900px) {
+	#message {
+		width: 300px;
+		background: transparent;
+		border: white, 5px;
+		margin-left: auto;
+		margin-right: auto;
+		height: 100px;
+		font-size: 18px;
+		font-color: white;
+		font-family: helvetica; 
+}
+	.chitchatbutton {
+    position: relative;
+    padding-top: 100px;
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+    z-index:0;
+	list-style: none;
+}
+	#email{
+    width: 300px;
+    background: none;
+    border: white, 4px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-size: 18px;
+    font-color: blue;
+    font-family: helvetica;
+    margin-bottom: 20px;
+}
+	.name {
+    width: 300px;
+    background: none;
+    border: white, 3px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    font-color: white;
+    margin-bottom: 20px;
+    font-family: sans-serif;   
+}
+	.formz {
+    max-width: 300px;
+    background: none;
+    font: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    
+}
+	
+  #project1:before {
+  background-image: url(../img/project_02_weathermobile.png);
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+	h1 {
+   display: none;
+}
+	
+	p{
+   display: none;
+}
+	
+#project3:before {
+  background-image: url(../img/project_02_doggy.png);
+  transform: translateZ(-1px) scale(2);
+  z-index:-1;
+}
+#project4 {
+	background-image: url(../img/project_02_calc.png);
+}
+
+}
+
+
+
 

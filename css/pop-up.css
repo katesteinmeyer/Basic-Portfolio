@@ -185,3 +185,221 @@ background-repeat:no-repeat;
     margin-right: auto;
     padding: 15px;
 }
+
+
+
+
+/* mobile */
+
+@media only screen and (max-width: 900px) {
+	
+	
+	
+body {
+background-color: #ED1544;
+}
+
+.bolder{
+
+   display: block;
+   font-size: 140%;
+   text-align: left;
+   font-family: sans-serif;
+   font-weight: 600;
+   line-height: 1.0;
+   color: #fff;
+}
+
+
+.lessbold{
+   display: block;
+   font-size: 100%;
+   text-align: left;
+   font-family: sans-serif;
+   font-weight: 500;
+   line-height: 1.2;
+   color: #fff;
+}
+
+
+.thankyou h1{
+   display: block;
+   font-size: 170%;
+   text-align: center;
+   font-family: sans-serif;
+   font-weight: 400;
+   line-height: 1.2;
+   color: #fff;
+   
+}
+
+.thankyou {
+    /*display: none;*/
+    position: absolute;
+    /* height: 70%; */
+    top: 50px;
+    background: #F5143A;
+    font: white;
+    /* margin-left: 50%; */
+    /* margin-right: 50%; */
+    /* padding-top: 200px; */
+    padding-top:100px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 100px;
+    width: 70%;
+    border: none;
+    background-color: #ED1544;
+    
+
+}
+paras p {
+    font-family: sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 140%;
+    font-weight: 100;
+
+}
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ED1544;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ED1544;
+	box-shadow:inset 0px 1px 0px 0px #ED1544;
+	background-color:#ED1544;
+	border:1px solid #ED1544;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 20px;
+	text-decoration:none;
+	background-color:#F3867F;
+	
+	
+
+}
+.myButton:hover {
+	background-color:#fff;
+    color:#ED1544;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.fancybttn {
+    text-align: center;
+
+}
+
+ul li {
+float:left;
+display:block;
+    
+}
+
+
+.twitter {
+	display:block;
+	background-image:url(../img/twitter.png);
+	background-repeat:no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: contain;
+	
+}
+
+/* unvisited link */
+.twitter a:link {
+    display:block;
+    background-image:url(../img/twitter.png);
+    background-repeat:no-repeat;
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+}
+
+/* visited link */
+.twitter a:visited {
+	display:block;
+	background-image:url(../img/twitter_fill_active.png);
+	background-repeat:no-repeat;
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+}
+
+/* mouse over link */
+.twitter:hover {
+    display:block;
+    background-image:url(../img/twitter_fill.png);
+    background-repeat:no-repeat;
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+}
+
+/* selected link */
+.twitter a:active {
+    display:block;
+    background-image:url(../img/twitter_fill.png);
+    background-repeat:no-repeat;
+	background-size: contain;
+	width: 80px;
+	height: 80px;
+}
+
+
+.dribbble {
+	display:block;
+	background-image:url(../img/dribbble.png);
+	background-repeat:no-repeat;
+	width: 80px;
+	height: 80px;
+	background-size: contain;
+}
+
+.dribbble:hover {
+    display:block;
+    background-image:url(../img/dribbble_fill.png);
+    background-repeat:no-repeat;
+	background-size: contain;
+}
+
+.linkedin {
+    display:block;
+    background-image:url(../img/in.png);
+    background-repeat:no-repeat;
+    width: 80px;
+	height: 80px;
+	background-size: contain;
+}
+
+.linkedin:hover {
+    display:block;
+    background-image:url(../img/in_fill.png);
+    background-repeat:no-repeat;
+    width: 80px;
+	height: 80px;
+	background-size: contain;
+}
+
+
+.socialmedia {
+    height: 200px;
+    margin-right: auto;
+    marign-left: auto;
+    max-width: 350px;
+    marigh-top: 100px;
+    background: none;
+    font: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+	
+}
+}
+	
+	

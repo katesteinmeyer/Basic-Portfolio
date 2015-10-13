@@ -1,0 +1,282 @@
+html {
+ background-color: skyblue;
+}
+
+
+
+#colorbox {
+
+}
+body {
+margin: 0px;
+padding: 0px;
+cursor:url(../img/brush-01.png),default;
+}
+
+.codebtn {
+    text-decoration: none;
+	background:url(../img/code_icon_i.png) no-repeat;
+    border: none;
+	outline: none;
+	float: left;
+	padding-top: 40px;
+	padding: 8px 8px 8px 8px;
+	font-size: 0;
+	line-height: 0;
+	position:absolute;
+    margin-top: 750px;
+	margin-right: 800px;
+    width: 100px;
+    height: 50px;
+	color: #000;
+	opacity: 50%;
+	background-size: contain;
+	clear:both;
+}
+
+
+body {
+    overflow: hidden;
+}
+
+#canvas {
+	background: url(../img/8190970526_a73594ab70_h%20%5BRecovered%5D-01.png) no-repeat center center fixed;
+	width: 1500px;
+	height: 700px;
+	margin-right: 3%;
+	margin-left: 5%;
+	/*border:1px solid red;*/
+
+}
+
+@media screen and (max-width: 650px) {
+    #canvas {
+	background: url(../img/8190970526_a73594ab70_h%20%5BRecovered%5D-02.png) no-repeat center center fixed;
+	margin-top: 5px;
+	margin-left: 30px;
+	padding-left: 40px;
+	padding-top: 5px;
+	width: 370px;	
+	height: 700px;
+    }
+	#colors {
+	height: 50px;
+	padding-left: 10px;
+	margin-top: 5px;
+	padding-bottom: 40px;
+	margin-left: 10px;
+	margin-right: 0;
+	width: 400px;
+	float:left;
+	clear: left;
+	position: absolute;
+	right: 0px;
+ 	bottom: 130px;
+	}
+	
+	#colorten {
+	display: none;
+	}
+	
+	.button {
+    text-decoration: none;
+	background:url(../img/arrow-01.png) no-repeat;
+    border: none;
+	outline: none;
+	float: left;
+    width: 110px;
+    height: 50px;
+
+}
+
+	}
+}
+
+#colors {
+	height: 200px;
+	padding-left: 10px;
+	margin-left: 70px;
+	margin-right: 10%;
+	padding-bottom: 50px;
+	width: 1500px;
+	float:left;
+}
+
+#colorone {
+	background: url(../img/colors-01.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#colortwo {
+	background: url(../img/colors-02.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	
+}
+#colorthree {
+	background: url(../img/colors-03.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#colorfour {
+	background: url(../img/colors-04.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#colorfive {
+	background: url(../img/colors-05.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#colorsix {
+	background: url(../img/colors-06.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#colorseven {
+	background: url(../img/colors-07.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#coloreight {
+	background: url(../img/colors-08.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#colorten {
+	background: url(../img/colors-10.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+
+#colorbox {
+	top: 100px;
+	bottom: 100px;
+	position:fixed;
+	float:left;
+
+}
+
+.button {
+    text-decoration: none;
+	background:url(../img/arrow-01.png) no-repeat;
+    border: none;
+	outline: none;
+	float: left;
+	padding-top: 40px;
+	padding: 8px 8px 8px 8px;
+	font-size: 0;
+	line-height: 0;
+	position: relative;
+    padding-bottom: 20px;
+    margin-top: 700px;
+    width: 250px;
+    height: 50px;
+    z-index:0;
+	color: #000;
+	font-size: 20px;
+	color:white;
+	text-align:right;
+	font-family: sans-serif;
+	margin-right: 300px;
+
+}
+/*
+#undo {
+	background: url(../img/colors-11.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-right: 10px;
+}
+
+#brush5 {
+	background: url(../img/colors-12.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-right: 10px;
+}
+
+#brush10 {
+	background: url(../img/colors-13.png) no-repeat;
+	width: 80px;
+	height: 80px;
+	padding: 20px;
+	float:left;
+	border: none;
+    outline:none;
+	margin-right: 10px;
+}
+
+*/

@@ -1,0 +1,184 @@
+
+
+html {
+	background-color:black;
+	background: url(../img/cloudy.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	overflow: hidden;	
+	background-color: #363637;
+	width: 100%;
+    height: 100%;
+}
+
+#credit {
+	margin-top: 90px;
+	font-family: sans-serif;
+	font-weight: lighter;
+	color: white;
+	margin-bottom: 10px; 
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+#image {
+    display:block;
+    background-image:url(../img/welcome_weather.png);
+    background-repeat:no-repeat;
+	margin-top: 50px;
+    width: 500px;
+	height: 117px;
+	background-size: contain;
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+
+h1 {
+	font-family: sans-serif;
+	font-weight: lighter;
+	color: white;
+	font-size: 50px;
+	padding-top: 10%;
+	text-align: center;
+}
+
+p {
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 28px;
+	padding-top: 0;
+	text-align: center;
+	padding: 50px;
+	color: white;
+}
+
+#box {
+	width: 50%;
+    height: 90%;
+	position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#displayweather {
+	width: 100%;
+	height: 100%;
+	margin-top: 10px;
+	text-align: center;
+	background-color: #0B7BCE;
+	border-radius: 10px;
+}
+
+#zipBox {
+	margin-top: 2px;
+	font-family: sans-serif;
+	display: table;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#button {
+	display:block;
+	color:  #0B7BCE;
+	background-repeat:no-repeat;
+	width: 200px;
+	height: 40px;
+	background-size: contain;
+	display: table;
+	margin: 0 auto;
+	background-color: #50A8FF;
+	border: none;
+	border-radius: 10px;
+}
+
+#button:hover {
+	display:block;
+	color: white;
+	background-repeat:no-repeat;
+	width: 200px;
+	height: 40px;
+	background-size: contain;
+	display: table;
+	margin: 0 auto;
+	background-color: #076BA8;
+	border: none;
+	border-radius: 10px;
+}
+
+.sendbutton {
+	padding-top: 10px;
+	margin-bottom: 30px;
+	display: table;
+    width: 50%;
+    margin: 0 auto;
+
+}
+
+input, textarea {
+	position: relative;
+	text-align: center;
+	font-color: #9AC4E1;
+	color: dimgray;
+	outline: none;
+	border: 2px solid gray;
+	border-radius: 8px;
+	font-size: 16px;
+	padding: 0.6rem;
+	box-sizing: border-box;
+	border: none;
+	
+}
+
+
+
+@media screen and (max-width: 900px) {
+
+#box {
+	width: 100%;
+    height: 90%;
+	position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+	html {
+	background-color:black;
+	background: url(../img/cloudy.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position: fixed;
+	overflow: hidden;	
+	background-color: #0B7BCE;
+	width: 100%;
+    height: 100%;
+}
+	#image {
+    display:block;
+    background-image:url(../img/welcome_weather.png);
+    background-repeat:no-repeat;
+	margin-top: 50px;
+    width: 400px;
+	height: 117px;
+	background-size: contain;
+	text-align: center;
+	margin: 0 auto;
+	
+	
+}
+}
