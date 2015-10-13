@@ -12,6 +12,9 @@ html {
 	
 }
 
+
+
+
  #displayweather {
 	width: 400px;
 	height: 700px;
@@ -132,6 +135,7 @@ div.displayweather {
 	padding-left: 20%;
 	font-family: sans-serif;
 	color: #147BF7;
+	
 }
 
 #button {
@@ -164,7 +168,7 @@ input, textarea {
 	border-top-right-radius: 2px;
 	border-bottom-right-radius: 2px;
 	border-bottom-left-radius: 2px;
-	color: aliceblue;	
+	color: white;	
 }
 
 #weathericons {
@@ -518,7 +522,6 @@ input, textarea {
 	height: 30px;
 	text-align: center;
 	font-weight: bold;
-	background-color: #147BF7;
 	bottom: 0px;
 	margin-top: 10%;
 }
