@@ -82,3 +82,4 @@ $(document).ready(function(){
 })
 
 
+$('head').append('<meta name="viewport" content="width=device-width, user-scalable=0, minimal-ui">');

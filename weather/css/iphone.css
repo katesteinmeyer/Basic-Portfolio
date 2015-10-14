@@ -32,6 +32,7 @@ div.displayweather {
     font-weight: lighter;
     color: white;
     font-size: 230%;
+	margin-right: 5%;
     padding-bottom: 31px;
     /* margin-top: 10%; */
     /* margin-left: 50px; */
@@ -52,6 +53,7 @@ div.displayweather {
     background-repeat: no-repeat;
     /* padding-left: 40px; */
     float: right;
+	margin-right: 5%;
 }
 
 #cityName {
