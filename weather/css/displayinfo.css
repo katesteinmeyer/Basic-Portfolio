@@ -23,14 +23,21 @@ html {
 
 	background-color: #0B7BCE;
 	
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px), 
-@media only screen and (max-device-width: 480px) {
-	.selector-01 { margin: 10px; }
-	.selector-02 { margin: 10px; }
-	.selector-03 { margin: 10px; }
 } 
+
+@media only screen 
+    and (device-width : 375px) // or 213.4375em
+    and (device-width : 667px) // or 41.6875em
+    and (width : 375px) // or 23.4375em
+    and (height : 559px) // or 34.9375em
+    and (orientation : portrait) 
+    and (color : 8)
+    and (device-aspect-ratio : 375/667)
+    and (aspect-ratio : 375/559)
+    and (device-pixel-ratio : 2)
+    and (-webkit-min-device-pixel-ratio : 2)
+ {
+
 
 #displayweather {
 	width: 500px;
@@ -287,7 +294,7 @@ img {
 
 
 /*Desktop */
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 900px) {
 
 body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
 	margin: 0; padding: 0; border: 0;
@@ -439,6 +446,4 @@ html {
 td.weather-icons {
 	/* padding-right: 110px; */	
 }
-	
-	
 }
