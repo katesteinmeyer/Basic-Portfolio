@@ -2,6 +2,8 @@ body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldse
 	margin: 0; padding: 0; border: 0;
 }
 
+
+
 html {
 	/*background-color:#0B7BCE;
 	-webkit-background-size: cover;
@@ -22,6 +24,13 @@ html {
 	background-color: #0B7BCE;
 	
 }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px), 
+@media only screen and (max-device-width: 480px) {
+	.selector-01 { margin: 10px; }
+	.selector-02 { margin: 10px; }
+	.selector-03 { margin: 10px; }
+} 
 
 #displayweather {
 	width: 500px;
@@ -92,7 +101,7 @@ div.displayweather {
     color: white;
     width: 300px;
     height: 200px;
-    position: fixed;
+  
 }
 
 #zipBox {
@@ -271,6 +280,8 @@ img {
     text-align: center;
     /* padding-right: 100px; */
     background-size: contain;
+}
+	
 }
 
 
