@@ -50,47 +50,54 @@
 
         //get weather data
         function getWeather(zipCode) {
+            const apiKey = 'ba8f25aa65e54097a8b162107242106';
+            console.log('Fetching current weather for zip:', zipCode);
             //get current weather conditions
-            $.get('http://api.openweathermap.org/data/2.5/weather?zip=' + zipCode + ',us&units=imperial&APPID=ded17c04cecada392fc437e96cea4205')
+            $.get('https://api.weatherapi.com/v1/current.json?key=' + apiKey + '&q=' + zipCode + '&aqi=no')
                 .done(function(data) {
-                    var name = data.name;
+                    console.log('Current weather data:', data);
+                    var name = data.location.name;
                     $('#cityName').text(name);
-                    var main = data.weather[0].main;
+                    var main = data.current.condition.text;
                     $('#forecast').text(main);
-                    var temp = data.main.temp;
-                    $('#temp').text(temp);
-                    var mainIcon = data.weather[0].icon;
-                    $('#mainIcon').append("<div class=\"icon-" + mainIcon + "\"></div>");
+                    var temp = data.current.temp_f;
+                    $('#temp').text(temp + '°F');
+                    var mainIcon = data.current.condition.icon;
+                    $('#mainIcon').append("<img src=\"" + mainIcon + "\" alt=\"Weather Icon\">");
+
                     //get 7 day forecast using coordinates from current weather data
-                    getForecast(data.coord.lat, data.coord.lon);
+                    getForecast(data.location.lat, data.location.lon);
                 })
-                .fail(function() {
-                    console.error('Error fetching current weather data');
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.error('Error fetching current weather data:', textStatus, errorThrown);
                 });
         }
 
         //get 7 day forecast
         function getForecast(lat, lon) {
-            $.get('http://api.openweathermap.org/data/2.5/onecall?lat=' + lat + '&lon=' + lon + '&exclude=hourly,minutely&units=imperial&appid=ded17c04cecada392fc437e96cea4205')
+            const apiKey = 'ba8f25aa65e54097a8b162107242106'; 
+            console.log('Fetching 7 day forecast for coordinates:', lat, lon);
+            $.get('https://api.weatherapi.com/v1/forecast.json?key=' + apiKey + '&q=' + lat + ',' + lon + '&days=7&aqi=no&alerts=no')
                 .done(function(forecastData) {
+                    console.log('7 day forecast data:', forecastData);
                     for (i = 0; i < 7; i++) {
-                        var dayTemp = forecastData.daily[i].temp.day;
-                        var dayTemp = float2int(dayTemp);
-                        var dayCond = forecastData.daily[i].weather[0].main;
-                        var icon = forecastData.daily[i].weather[0].icon;
+                        var dayTemp = forecastData.forecast.forecastday[i].day.avgtemp_f;
+                        dayTemp = float2int(dayTemp);
+                        var dayCond = forecastData.forecast.forecastday[i].day.condition.text;
+                        var icon = forecastData.forecast.forecastday[i].day.condition.icon;
 
                         //populate days of the week
                         $("#temps").append("<td class=\"letter forecastTemps\">" + dayTemp + "</td>");
                         $("#weathericons tr").append(
-                            "<td class=\"weather-icons\"><img src=\"http://openweathermap.org/img/wn/" + icon + ".png\" /></td>"
+                            "<td class=\"weather-icons\"><img src=\"" + icon + "\" alt=\"Weather Icon\"></td>"
                         );
                         $("#days tr").append(
                             "<td class=\"letter\">" + days[dayNum + i] + "</td>"
                         );
                     }
                 })
-                .fail(function() {
-                    console.error('Error fetching forecast data');
+                .fail(function(jqXHR, textStatus, errorThrown) {
+                    console.error('Error fetching forecast data:', textStatus, errorThrown);
                 });
         }
 
@@ -99,8 +106,10 @@
         // This method runs when the HTML is loaded, everything else runs before the 
         // HTML is loaded
         $(document).ready(function(){
-            $('#zipcode').val(searchZip);
-            getWeather(searchZip);
+            if (searchZip) {
+                $('#zipcode').val(searchZip);
+                getWeather(searchZip);
+            }
 
             $('#button').click(search);
             $('#zipcode').keydown(function(e) {
